@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Silver Toast</title>
+    <meta name="description" content="When silver hits $100, we raise a glass — together. Join the global live toast." />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="The Silver Toast" />
+    <meta property="og:description" content="When silver hits $100, we raise a glass — together." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thesilvertoast.com" />
+    <!-- Optional later: <meta property="og:image" content="https://thesilvertoast.com/og-image.png" /> -->
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="The Silver Toast home">
+          <span class="brand__mark">🥂</span>
+          <span class="brand__text">The Silver Toast</span>
+        </a>
+
+        <nav class="nav">
+          <a href="#how">How it works</a>
+          <a href="#trigger">Trigger</a>
+          <a href="#faq">FAQ</a>
+          <a class="btn btn--small" href="#notify">Get Notified</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero__inner">
+          <div class="hero__copy">
+            <p class="eyebrow">A global live celebration</p>
+            <h1>The Silver Toast</h1>
+            <p class="lead">
+              When <strong>silver hits $100</strong>, we raise a glass — <strong>together</strong>.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn" href="#notify">🔔 Get Notified</a>
+              <a class="btn btn--ghost" href="#how">Learn more</a>
+            </div>
+
+            <div class="hero__chips" aria-label="Key points">
+              <span class="chip">No selling</span>
+              <span class="chip">No drama</span>
+              <span class="chip">Just a moment</span>
+              <span class="chip">#TheSilverToast</span>
+            </div>
+          </div>
+
+          <div class="hero__card">
+            <div class="card">
+              <h2 class="card__title">The Plan</h2>
+              <ol class="steps">
+                <li><span class="steps__num">1</span> Silver closes above <strong>$100</strong></li>
+                <li><span class="steps__num">2</span> We announce the toast time</li>
+                <li><span class="steps__num">3</span> You bring a celebratory drink</li>
+                <li><span class="steps__num">4</span> We raise a glass — globally 🥂</li>
+              </ol>
+
+              <div class="divider"></div>
+
+              <p class="muted">
+                Want to help spread the word?
+              </p>
+              <a
+                class="btn btn--full btn--x"
+                target="_blank"
+                rel="noreferrer"
+                href="https://twitter.com/intent/tweet?text=When%20silver%20hits%20%24100%2C%20we%20raise%20a%20glass%20%E2%80%94%20together.%20Join%20The%20Silver%20Toast%20%F0%9F%A5%82%20%23TheSilverToast%20https%3A%2F%2Fthesilvertoast.com"
+              >
+                Share on X
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW -->
+      <section id="how" class="section">
+        <div class="container">
+          <h2>How it works</h2>
+          <p class="section__lead">
+            The Silver Toast is a simple, shared moment for silver holders around the world.
+          </p>
+
+          <div class="grid">
+            <div class="panel">
+              <h3>🎥 Live</h3>
+              <p>We host a short live stream for the toast moment. Easy to join, easy to share.</p>
+            </div>
+            <div class="panel">
+              <h3>🌎 Global</h3>
+              <p>Wherever you are, you’re invited. Bring your drink and your best “we made it.”</p>
+            </div>
+            <div class="panel">
+              <h3>🥂 The Toast</h3>
+              <p>A quick countdown, a few words, and one giant internet clink.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRIGGER -->
+      <section id="trigger" class="section section--alt">
+        <div class="container">
+          <h2>The trigger</h2>
+          <p class="section__lead">
+            To keep it fair and avoid intraday spikes, the toast is triggered by a close.
+          </p>
+
+          <div class="callout">
+            <p class="callout__title">✅ Official Trigger</p>
+            <p class="callout__text">
+              The first <strong>daily close</strong> above <strong>$100</strong> (spot price).
+            </p>
+            <p class="muted small">
+              After the trigger, we’ll announce the live toast date/time and stream link to subscribers.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- NOTIFY -->
+      <section id="notify" class="section">
+        <div class="container">
+          <h2>Get notified</h2>
+          <p class="section__lead">
+            Join the list. You’ll get an email when it’s time to raise a glass.
+          </p>
+
+          <!--
+            ✅ EASY MODE EMAIL:
+            Use Formspree (or similar) so you don't need backend code.
+            1) Create a Formspree form, get your form endpoint
+            2) Replace the action URL below
+          -->
+          <form class="form" action="https://formspree.io/f/REPLACE_ME" method="POST">
+            <label class="sr-only" for="email">Email address</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <button class="btn" type="submit">Notify Me</button>
+          </form>
+
+          <p class="muted small">
+            No spam. No selling. Unsubscribe anytime.
+          </p>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section section--alt">
+        <div class="container">
+          <h2>FAQ</h2>
+          <div class="faq">
+            <details>
+              <summary>What if silver hits $100 intraday but doesn’t close above it?</summary>
+              <p>
+                We wait for the first daily close above $100. It keeps the moment clean and avoids false alarms.
+              </p>
+            </details>
+
+            <details>
+              <summary>Is this financial advice?</summary>
+              <p>
+                Nope. This is a celebration. Do your own research and make your own decisions.
+              </p>
+            </details>
+
+            <details>
+              <summary>What will the live stream be on?</summary>
+              <p>
+                We’ll announce the platform and link after the trigger. (YouTube Live is likely.)
+              </p>
+            </details>
+
+            <details>
+              <summary>What should I toast with?</summary>
+              <p>
+                Anything celebratory: whiskey, beer, champagne, sparkling water, coffee. If you can raise it, it counts.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="small muted">
+          © <span id="year"></span> The Silver Toast • A celebration, not financial advice.
+        </p>
+        <p class="small muted">
+          Tag your posts: <strong>#TheSilverToast</strong>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Tiny JS: set current year
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
