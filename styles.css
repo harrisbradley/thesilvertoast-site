@@ -168,7 +168,7 @@ h1 {
   gap: 10px;
 }
 .steps li {
-  display: grid;
+  display: inline-flex;
   grid-template-columns: 26px 1fr;
   gap: 10px;
   align-items: start;
